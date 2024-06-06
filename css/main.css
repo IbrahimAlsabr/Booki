@@ -61,7 +61,7 @@ html {
 /* Very Large Screen */
 @media (min-width: 1440px) {
 	.container {
-		max-width: 1440px; 
+		max-width: 1440px;
 
 	}
 }
@@ -369,12 +369,27 @@ html {
 /*---*---*---*---*---*---* End Landing *---*---*---*---*---*---*/
 
 /*---*---*---*---*---*---* Start populars *---*---*---*---*---*---*/
+
+@media (max-width: 767px) {
+	.all-heberg {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.all-heberg .hebergement,
+	.all-heberg .h-marseill {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.all-heberg {
 		display: grid;
 		gap: 15px;
 		grid-template-columns: 3fr 1fr;
 	}
+
 	.hebergement {
 		grid-column-start: 1;
 		grid-row-start: 1;
@@ -416,7 +431,7 @@ html {
 
 @media (max-width:767px) {
 	.hebergement .h-marseille .box {
-		margin-bottom: 15px;
+		margin-bottom: 15inpx;
 	}
 }
 
@@ -632,6 +647,14 @@ html {
 		display: grid;
 		gap: 20px 30px;
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.activite .container .all-activite {
+		display: block;
 	}
 
 }
